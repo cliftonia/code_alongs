@@ -1,0 +1,98 @@
+img {
+  width: 25%;
+  padding: 1vmin;
+  height: 25%;
+}
+
+.latest-dishes {
+ display: flex;
+ justify-content: space-between;
+}
+
+
+.ui-card {
+  margin-left: 0 auto;
+  width: 350px;
+  background-color: mistyrose;
+  transition: all 0.3s ease-in-out;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.ui-card:hover {
+  transform: translateY(10px);
+}
+
+.ui-card > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart-form {
+  display: block;
+}
+
+.home-avatar {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.username {
+  margin-right: auto;
+  padding-left: 1vmin;
+}
+
+.special {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.home-image {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+  /* display: none; */
+  opacity: 0;
+  transition: all 0.4s linear;
+  /* transform: rotate(90deg); */
+}
+
+.home-image:hover .heart {
+  opacity: 1;
+}
+
+.home-img {
+  width: 100%;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-image {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+}
+
+.content {
+  padding: 10px;
+}
+

@@ -1,0 +1,27 @@
+.brush-box {
+  height: 50px;
+  width: 50px;
+}
+
+.set-color {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  border: 1px dotted;
+}
+
+.box-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+

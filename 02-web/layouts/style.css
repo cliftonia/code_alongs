@@ -1,0 +1,22 @@
+.box {
+  background-color: mistyrose;
+}
+
+.special {
+  background-color: red;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; /* the default, */ 
+  justify-content: flex-start; /* the default, */
+}
+
+/* .box-a {
+  width: 80%;
+  background-color: tomato;
+}
+
+.box-b {
+  width: 20%;
+} */

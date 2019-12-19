@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: tomato;
+  border: 4px solid black;
+  padding: 10px;
+  width: 265px;
+  display: inline-block;
+}
+
+h1:first-child {
+  width: 265px;
+}
+
+a {
+  display: block
+}
+
+h2 {
+
+}

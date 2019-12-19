@@ -1,0 +1,26 @@
+body {
+  background-color: mistyrose;
+}
+
+h1 {
+  color: red;
+}
+
+.special {
+  background-color: blue;
+}
+
+/* Class Selector */
+.title {
+  color: red;
+}
+
+/* ID Selector */
+#really-special { 
+  color: tomato;
+}
+
+/* decedant selector */
+article p {
+  background-color: gray;
+}

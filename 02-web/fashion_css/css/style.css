@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.header-heading {
+  color: red;
+  font-size: 3em;
+}
+
+.header-heading2 {
+  color: grey;
+  font-size: .5em;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.header-nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-nav ul li a {
+  color: white;
+}
+
+.article-footer {
+  border-bottom: 1px solid grey;
+  padding-bottom: 24px;
+  text-align: right;
+}
+
+.more {
+  text-align: right;
+}
+
+.aside-heading {
+  color: grey;
+}
+
+.article-heading {
+  color: grey;
+}
+
+.date {
+  color: grey;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+}
+
+main {
+  width: 65%;
+}
+
+aside{
+  width: 30%;
+}
+
+.article-em {
+  float: left;
+  margin-right: 10px;
+  color: grey;
+  font-size: 2em;
+}
+
+/* .article-footer {
+  display: flex;
+  justify-content: flex-end;
+} */
+
+.red-link {
+  color: red;
+  text-decoration: none;
+  text-align: right;
+}
+
+.popular-posts ul {
+  list-style-type: none;
+}
+
+.popular-posts ul li {
+  text-decoration: none;
+  color: red;
+}
+
+.popular-posts ul li a {
+  color: tomato;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 0px;
+}
+
+.footer-nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+  flex-grow: 1;
+  border-right: 1px dotted grey;
+  padding: 7px;
+}
+
+.footer-nav ul li:last-child {
+  border-right: 0;
+}
+
+.footer-nav ul li a {
+  color: red;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:

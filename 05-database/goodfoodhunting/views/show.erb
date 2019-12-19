@@ -1,0 +1,13 @@
+<h1>Dish Details</h1>
+
+<h1><%= @dish["title"]%></h1>
+
+<img src="<%= @dish["image_url"] %>" alt="">
+
+  <form action="/dishes/<%= @dish["id"] %>" method="post" >
+    <input type="hidden" name="_method" value="delete">
+    <button>delete</button>
+  </form>
+
+  <a href="/dishes/<%= @dish['id'] %>/edit">edit dish</a>
+  <a href="/">Home</a>

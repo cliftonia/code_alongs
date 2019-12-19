@@ -1,0 +1,62 @@
+body {
+
+}
+
+.box-1 {
+  background-color: mistyrose;
+  font-size: 2em;
+}
+
+.box-2 {
+  background-color: plum;
+}
+
+.box-3 {
+  background-color: green;
+}
+
+a {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+.intro {
+  background-color: aqua;
+}
+
+.projects {
+  background-color: peachpuff;
+}
+
+.about {
+  background-color: lemonchiffon;
+}
+
+@media (min-width: 37.5em) { /* think of it as an if statement */
+  nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 62.5em) {
+  a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .box-1 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;  
+  }
+}
+
+@media (min-width: 37.5em) {
+  .box-1 section {
+    padding: 1rem;  
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "node-project-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "mkdir test",
+    "rm setup": 'rm -rf test'
+  },
+  "keywords": [],
+  "author": "CB",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "lodash": "^4.17.15"
+  }
+}

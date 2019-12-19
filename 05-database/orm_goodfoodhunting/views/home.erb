@@ -1,0 +1,66 @@
+<section class="latest-dishes">
+  <%@dishes.each do |dish| %>
+  <div class="ui-card">
+
+  <header class='home-wrapper content'>
+      <div>
+        <img class="home-avatar" src="https://via.placeholder.com/50" alt="">
+      </div>
+    <span class="username">Dt</span>
+    <span>17h</span>
+  </header>
+
+  <section class="home-image">
+    <img class="home-img" src="https://via.placeholder.com/800" alt="">
+    <div data-dish-id="<%= dish.id %>" class="heart">♥</div>
+    <form class="heart-form" action="/likes" method="post">
+      <input type="hidden" name="dish_id" value="<%= dish.id%>">
+      <button>like</button>
+    </form>
+  </section>
+
+  <section class="home-content content">
+    <h2><%= dish.title %></h2>
+    <h4>at GA</h4>
+  </section>
+
+  <footer class="home-footer content">
+    <span class="home-by">by dt</span>
+    <span class="home-likes">likes: <span class="like-number"><%= dish.likes.count %></span></span>
+  </footer>
+
+  </div>
+  <%end %>
+</section>
+<%# <div class="special">me over here !!!!</div> %>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+
+var hearts = document.querySelectorAll('.heart')
+var handleClick = function(event) {
+  
+   
+
+var options = {
+  method: 'post',
+  url: 'api/likes',
+  data: { dish_id: event.target.getAttribute("data-dish-id") }
+}
+
+var handleDone = function(resp) {
+  console.log(resp)
+  var LikesNumberSpan = event.target.closest('.ui-card').querySelector('.like-number')
+  LikesNumberSpan.textContent = resp.likes_count
+}
+
+  $.ajax(options).done(handleDone)
+}
+
+hearts.forEach(heart => {
+  heart.addEventListener('click', handleClick)
+})
+
+                       
+</script>
+
+<%# heart.closest('.ui-card').querySelector('.like-number') %>
